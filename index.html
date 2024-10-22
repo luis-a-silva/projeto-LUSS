@@ -10,6 +10,19 @@
 <body>
 <div class="container">
 
+    <span>
+        <img class="menu" src="assets/cardapio.png" alt="menu" onclick="menubar()">
+    </span>
+
+    <div id="nav-bar-expand" style="display: none;z-index: 99;">
+            <ul>
+                <li><a href="#section1">Página Inicial</a></li>
+                <li><a href="#section2">Sobre Nós</a></li>
+                <li><a href="#section3">Projeto LUSS</a></li>
+                <li><a href="https://app.powerbi.com/view?r=eyJrIjoiMTcwOGQ5MDEtMWNmMy00ZjlhLWJhMDUtYWNlZGYxMjMwMzYxIiwidCI6Ijk0NzZhNjY3LTFhNWEtNGNiZC04NTcxLWEwZTUwODBiMzMwZCJ9" target="_blank" rel="noopener noreferrer">Acesse a Base de Dados</a></li>
+            </ul>
+    </div>
+
     <div class="nav-bar">
         <ul>
             <li><a href="#section1">Página Inicial</a></li>
@@ -185,7 +198,14 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
   });
 });
 
-
+function menubar() {
+    const nav = document.getElementById('nav-bar-expand');
+    if (nav.style.display === 'none' || nav.style.display === '') {
+        nav.style.display = 'block'; // Torna visível
+    } else {
+        nav.style.display = 'none'; // Esconde
+    }
+}
 
 </script>
 </body>
