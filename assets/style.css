@@ -174,10 +174,11 @@
     justify-content: center;
     height: max-content;
     display: flex;
+    padding: 12vw;
 }
 
 .projeto-luss img{
-   margin-left: 10%;
+   margin-left: 0%;
 }
 
 .projeto-luss h2{
@@ -195,6 +196,7 @@
     justify-content: center;
     height: max-content;
     display: flex;
+    padding: 12vw;
 
 }
 
@@ -212,32 +214,12 @@
 .footer{
     background-color: grey;
     width: 100%;
-    height: max-content;
-    padding: 4% 2%;
-    margin-top: 6%;
-}
-
-.footer ul{
-    display: inline-grid;
-    margin-left: 15%;
-    list-style: none;
-} 
-
-.footer li{
-    text-decoration: none;
-    margin-bottom: 18px;
-}
-
-.footer a{
-    color: #FFFFFF;
-    font-size: 1.4em;
-    text-decoration: none;
+    padding: 3%;
 }
 
 .footer p{
     color: #FFFFFF;
     font-size: 1.2em;
-    margin-top: 5%;
     margin-left: 40%;
 }
 
